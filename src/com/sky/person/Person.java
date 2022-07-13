@@ -1,6 +1,6 @@
 package com.sky.person;
 
-public class Person {
+public class Person extends LivingThing {
         private static String definition = "A class which defines a person by their name and age";
         int age;
         String name;
@@ -40,6 +40,11 @@ public class Person {
         }
         public boolean orderDrink(){
             return true;
+        }
+
+        @Override
+        public void Breathe(){
+            System.out.println("I breathe with lungs");
         }
 
 }
